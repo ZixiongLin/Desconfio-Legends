@@ -1,0 +1,187 @@
+/** ÍNDICE
+   0 - General
+   1 - Header (logo, título y panel de usuario)
+   2 - Main container
+       2.1 - Últimas noticias
+             2.1.1 Noticia principal
+             2.1.2 Noticias secundarias
+   3 - Aside
+   4 - Footer
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+}
+
+html {
+    background: #222;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+/**************************************************/
+/***                 1. HEADER                  ***/
+/**************************************************/
+header {
+    height: 48px;
+    box-shadow: 0 4px 4px black;
+    padding-left: 10px;
+    background: #511616; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #511616 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #511616 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #511616 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511616', endColorstr='#000000',GradientType=1 ); /* IE6-9 (horizontal gradient) */
+}
+
+#site-logo {
+    width: 48px;
+    vertical-align: middle;
+}
+
+/** Coloreado de las letras D y L del title */
+header span:first-child { color: #000; }
+header span:last-child { color: #f22; }
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    float: right;
+}
+
+header nav a, #user-panel a {
+    display: inline-block;
+    height: 100%;
+    line-height: 48px;
+    padding: 0 5px;
+}
+header nav a {
+    font-size: 20px;
+    width: 80px;
+    text-align: center;
+}
+
+header nav a:hover, 
+header nav a.current-page, 
+#user-panel a:hover {
+    background: #711;
+}
+
+#user-panel {
+    float: right;
+    border-left: 4px solid #822;
+}
+
+/**************************************************/
+/***            2. MAIN CONTAINER               ***/
+/**************************************************/
+#main-container {
+    text-align: center;
+}
+#page-content{
+    display: inline-block;
+    width: 1000px;
+    margin: 10px 10px 10px 0px;
+    background: #20101099;
+}
+
+
+/**************************************************/
+/***          2.1 ULTIMAS NOTICIAS              ***/
+/**************************************************/
+
+/***  2.1.1 Noticia principal  ***/
+#noticia-principal{
+    max-height: 600px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+#noticia-principal .text-preview {
+    position: absolute;
+    bottom: 0;
+    background: #322e;
+    padding: 10px;
+}
+
+#noticia-principal h1 { 
+    font-size: 32px;
+    margin: 10px 0;
+    text-shadow: 1px 1px black;
+}
+#noticia-principal img {
+    width: 100%;
+}
+
+
+/***  2.1.2 Noticias secundarias  ***/
+#noticias-secundarias {
+    text-align: center;
+}
+
+#noticias-secundarias article {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 312px;
+    margin: 10px 12px 0 0;
+    height: 300px;
+    background: #5557;
+}
+
+#noticias-secundarias article:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+    background: #20101099;
+    margin-top: 10px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    height: 600px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 10px;;
+    background: #511616; /* Old browsers */
+    background: -moz-linear-gradient(-35deg, #511616 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-35deg, #511616 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(145deg, #511616 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#511616', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+
+
+
+
+
