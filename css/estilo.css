@@ -139,25 +139,28 @@ header nav a.current-page,
     text-align: left;
     width: 312px;
     margin: 10px 12px 0 0;
-    height: 300px;
-    background: #5557;
+    height: 320px;
+    background: #5552;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 #noticias-secundarias article:last-child {
     margin-right: 0;
 }
 
+#noticias-secundarias article .thumbnail {
+    width: 100%;
+}
 
+#noticias-secundarias article h1 {
+    margin: 5px 0;
+}
 
-
-
-
-
-
-
-
-
-
+#noticias-secundarias article p {
+    margin: 0;
+    text-align: justify;
+}
 
 aside {
     background: #20101099;
